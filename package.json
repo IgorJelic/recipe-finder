@@ -1,0 +1,22 @@
+{
+  "name": "recipe-finder",
+  "version": "1.0.0",
+  "description": "Collaborator:",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "config": "parcel build 'src/components/**/*.{html,css}' --public-url ../"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/babel-preset-env": "^2.12.0",
+    "buffer": "^6.0.3",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5"
+  }
+}

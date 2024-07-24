@@ -1,0 +1,80 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+:host {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-card {
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+  /* background-color: greenyellow; */
+  max-width: 80%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card-upper {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: start;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  color: white;
+
+  background-color: var(--navbar-bc);
+}
+
+.recipe-card-upper img {
+  height: 120px;
+  width: 160px;
+  object-fit: cover;
+
+  border: 1px solid var(--border-dark);
+
+  margin: 16px 24px;
+
+  border-radius: 20%;
+}
+
+.recipe-heading button {
+  margin-right: 10px;
+
+  height: 28px;
+  width: 80px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: white;
+  color: var(--border-dark);
+
+  transition: all 0.1s ease-in;
+}
+
+.recipe-heading button:hover {
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: #f0f0f0;
+}
+
+.recipe-heading .favorite {
+  color: violet;
+}
+
+.recipe-title {
+  font-size: 22px;
+  margin: 6px 24px;
+  margin-left: 0px;
+}
+
+.recipe-summary {
+  font-size: 12px;
+  padding: 10px 24px;
+}

@@ -1,0 +1,79 @@
+.toggle-switch {
+  position: relative;
+  width: 130px;
+  display: inline-block;
+}
+
+.toggle-switch-checkbox {
+  display: none;
+}
+
+.toggle-switch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid var(--border-dark);
+  border-radius: 20px;
+  margin-left: 5px;
+}
+
+.toggle-switch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.toggle-switch-inner:before,
+.toggle-switch-inner:after {
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  float: left;
+  width: 50%;
+  height: 40px;
+  padding: 0;
+  line-height: 26px;
+  font-size: 14px;
+  color: var(--border-dark);
+  box-sizing: border-box;
+}
+
+.toggle-switch-inner:before {
+  content: "Ingredients";
+  padding-left: 10px;
+  background-color: #ccc;
+}
+
+.toggle-switch-inner:after {
+  content: "Name";
+  padding-left: 30px;
+  background-color: white;
+}
+
+.toggle-switch-switch {
+  display: block;
+  width: 18px;
+  margin: 4px;
+  background-color: #ccc;
+
+  border: 2px solid var(--border-light);
+  border-radius: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 92px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-inner {
+  margin-left: 0;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  right: 3px;
+}
+
+.toggle-switch-checkbox:checked + .toggle-switch-label .toggle-switch-switch {
+  background-color: white;
+}

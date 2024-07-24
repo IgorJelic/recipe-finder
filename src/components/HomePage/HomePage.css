@@ -1,0 +1,258 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.content-wrapper {
+  width: 100%;
+  height: calc(100% - 70px);
+
+  overflow-y: auto;
+  display: flex;
+
+  position: relative;
+}
+
+/* FILTERS */
+.filters-wrapper {
+  width: 25%;
+  height: 50%;
+
+  position: absolute;
+  top: 2%;
+
+  background-color: white;
+
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border: 2px solid var(--border-light);
+  border-left: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filters-wrapper h1 {
+  color: var(--border-dark);
+  margin: 0;
+  padding: 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: calc(100% - 70px - 50px);
+  width: 100%;
+
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+  overflow-y: auto;
+}
+
+.filter {
+  height: 27px;
+}
+
+.filter-type {
+  height: 40px;
+}
+
+.filter,
+.filter-type {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-dark);
+  border-radius: 6px;
+
+  color: white;
+  background-color: var(--navbar-bc);
+
+  transition: all 0.1s ease-out;
+}
+
+.filter:not(:first-child),
+.filter-type:not(:first-child) {
+  margin-top: 10px;
+}
+
+.filter.active,
+.filter-type.active {
+  color: var(--border-dark);
+  background-color: var(--hover-green);
+}
+
+.filter:hover,
+.filter-type:hover {
+  cursor: pointer;
+  color: var(--navbar-bc);
+  background-color: white;
+}
+
+.active-filters {
+  min-height: 50px;
+  width: 100%;
+  border-top: 2px solid var(--border-light);
+}
+
+/* SHOPPING LIST */
+.shopping-list-wrapper {
+  width: 25%;
+  height: 40%;
+
+  position: absolute;
+  bottom: 4%;
+
+  overflow-y: auto;
+  background-color: white;
+
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+
+  border: 2px solid var(--border-light);
+  border-left: none;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.shopping-list-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  width: 88%;
+}
+
+.shopping-list-button {
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+}
+
+.shopping-list-button:hover {
+  cursor: pointer;
+}
+
+.shopping-list {
+  margin: 0;
+  padding: 6px 16px;
+  width: 66%;
+  height: 60%;
+  background-color: var(--navbar-bc);
+  border-radius: 4px;
+  color: white;
+  list-style: decimal;
+
+  padding-left: 30px;
+  overflow-y: auto;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-item span {
+  font-size: 20px;
+}
+
+.list-item span:hover {
+  cursor: pointer;
+}
+
+/* CONTENT */
+.content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 66%;
+  max-height: 90%;
+
+  padding: 20px 40px;
+
+  overflow-y: auto;
+}
+
+.content > :not(:first-child) {
+  margin-top: 30px;
+}
+
+.recipe-card {
+  border-radius: 8px;
+  border: 1px solid var(--border-dark);
+  /* background-color: greenyellow; */
+
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-card-upper {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  justify-content: start;
+
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+
+  color: white;
+
+  background-color: var(--navbar-bc);
+}
+
+.recipe-card-upper img {
+  height: 120px;
+  width: 160px;
+  object-fit: cover;
+
+  border: 1px solid var(--border-dark);
+
+  margin: 16px 24px;
+
+  border-radius: 20%;
+}
+
+.recipe-heading button {
+  margin-right: 10px;
+
+  height: 28px;
+  width: 80px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: white;
+  color: var(--border-dark);
+
+  transition: all 0.1s ease-in;
+}
+
+.recipe-heading button:hover {
+  cursor: pointer;
+  transform: translateY(1px);
+  background-color: #f0f0f0;
+}
+
+.recipe-heading .favorite {
+  color: violet;
+}
+
+.recipe-title {
+  font-size: 22px;
+  margin: 6px 24px;
+  margin-left: 0px;
+}
+
+.recipe-summary {
+  font-size: 12px;
+  padding: 10px 24px;
+}

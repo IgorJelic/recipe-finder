@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="toggleBtn.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script src="index.js" defer type="module"></script>
+    <title>Recipe finder</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <section class="upper-nav"></section>
+        <nav>
+          <ul class="links">
+            <div class="nav-logo">&#129382;</div>
+            <li><a class="link" href="/">Home</a></li>
+            <li><a class="link" href="/favorites">Favorites</a></li>
+            <li><a class="link" href="/">Recipes</a></li>
+            <li><a class="link" href="/">Gallery</a></li>
+            <li><a class="link" href="/">Contact</a></li>
+          </ul>
+          <button id="register">Register</button>
+        </nav>
+      </header>
+      <main>
+        <section class="search-wrapper">
+          <form class="search">
+            <div class="toggle-switch">
+              <input
+                type="checkbox"
+                id="search-by-ingredients"
+                class="toggle-switch-checkbox"
+              />
+              <label for="search-by-ingredients" class="toggle-switch-label">
+                <span class="toggle-switch-inner"></span>
+                <span class="toggle-switch-switch"></span>
+              </label>
+            </div>
+
+            <input
+              id="search-input"
+              type="text"
+              placeholder="Name or Ingredients"
+            />
+            <button id="search-btn">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <button id="clear-search-btn">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </form>
+        </section>
+        <div class="content-wrapper"></div>
+      </main>
+    </div>
+  </body>
+</html>

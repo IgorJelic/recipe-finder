@@ -1,0 +1,67 @@
+{
+  "results": [
+    {
+      "id": 715495,
+      "title": "Turkey Tomato Cheese Pizza",
+      "image": "https://img.spoonacular.com/recipes/715495-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 715421,
+      "title": "Cheesy Chicken Enchilada Quinoa Casserole",
+      "image": "https://img.spoonacular.com/recipes/715421-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 716432,
+      "title": "Finger Foods: Frittata Muffins",
+      "image": "https://img.spoonacular.com/recipes/716432-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 157344,
+      "title": "Spicy Salad with Kidney Beans, Cheddar, and Nuts",
+      "image": "https://img.spoonacular.com/recipes/157344-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 716408,
+      "title": "Greek-Style Baked Fish: Fresh, Simple, and Delicious",
+      "image": "https://img.spoonacular.com/recipes/716408-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 645978,
+      "title": "Ground Turkey Stuffed Peppers",
+      "image": "https://img.spoonacular.com/recipes/645978-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 633754,
+      "title": "Baked Ratatouille",
+      "image": "https://img.spoonacular.com/recipes/633754-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 633766,
+      "title": "Baked Rigatoni",
+      "image": "https://img.spoonacular.com/recipes/633766-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 730914,
+      "title": "Basil Infused Balsamic Oven Baked Chicken",
+      "image": "https://img.spoonacular.com/recipes/730914-312x231.jpg",
+      "imageType": "jpg"
+    },
+    {
+      "id": 642602,
+      "title": "Farro salad with parsley pesto",
+      "image": "https://img.spoonacular.com/recipes/642602-312x231.jpg",
+      "imageType": "jpg"
+    }
+  ],
+  "offset": 0,
+  "number": 10,
+  "totalResults": 318
+}
