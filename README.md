@@ -13,4 +13,4 @@ Recipe Finder is a web application built to practice Vanilla JavaScript and expl
 - **HTML**: For the structure of the application.
 - **CSS**: For styling the application.
 - **Vanilla JavaScript**: For implementing the core functionality.
-- **Recipe API**: For fetching recipe data.
+- **Recipe API**: For fetching recipe data. [Visit Spoonacular](https://spoonacular.com)
